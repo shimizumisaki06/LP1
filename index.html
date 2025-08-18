@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>M.SHIMIZU -LP-</title>
+    <meta name="description" content="架空のLPです。" />
+    <meta name="keywords" content="web制作,LP,オリジナル" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OGP -->
+    <meta property="og:url" content="本番環境URL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="M.SHIMIZU -LP-" />
+    <meta property="og:description" content="架空のLPです。" />
+    <meta property="og:site_name" content="LP①" />
+    <meta property="og:image" content="本番環境URL/img/logo.png" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- sq -->
+    <script>
+      document.querySelectorAll(".x-embed").forEach((box) => {
+        const onReady = () => {
+          if (box.querySelector("iframe")) {
+            box.classList.add("is-loaded");
+            return true;
+          }
+          return false;
+        };
+        if (onReady()) return;
+
+        const obs = new MutationObserver(() => {
+          if (onReady()) obs.disconnect();
+        });
+        obs.observe(box, { childList: true, subtree: true });
+      });
+    </script>
+  </head>
+  
+  <body>
+    <main>
+      <section class="top" id="top">
+        <div class="top-wrap">
+          <div class="top-wrap__left">
+            <div class="top-wrap__logo">
+              <img src="img/logo.png" alt="ロゴ" />
+            </div>
+          </div>
+          <div class="top-wrap__right">
+            <div class="top-wrap__nav">
+              <a href="#">特徴</a>
+              <a href="#">料金</a>
+              <a href="#">使い方</a>
+              <a href="#">お問い合わせ</a>
+            </div>
+            <div class="top-wrap__btn">
+              <a href="#" class="top-wrap__nav__btn">30日間無料トライアル</a>
+            </div>
+          </div>
+
+          <div class="top-wrap__ttl">
+            <h1>
+              かわいい動物たちと一緒に、<br />学習時間の管理をもっと楽<br />しく。
+            </h1>
+            <p>
+              学習の進捗を可視化し、モチベーションもアップ。<br />あなたの成長を楽しくサポートします。
+            </p>
+            <a href="#" class="top-wrap__ttl__btn __btn">無料トライアル</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pro" id="pro">
+        <div class="container pro-wrap">
+          <h2 class="pro-wrap__ttl __ttl1">
+            <span>個人学習でこんなこと</span>
+            <span class="speech-wrap">
+              <span class="speech">悩んでいませんか？</span>
+              <img src="img/pro-img2.jpg" alt="ペンギン" class="penguin-ttl" />
+            </span>
+          </h2>
+
+          <div class="pro-wrap__con">
+            <p class="pro-wrap__txt">
+              <span class="linebox">
+                教材やアプリはたくさんあるのにどれから手をつければいいのか<br />
+                <span class="line2">分からず時間だけが過ぎてしまう</span>
+              </span>
+            </p>
+            <p class="pro-wrap__txt">
+              <span class="linebox">
+                忙しい日が続くと「今日はやめておこう」と思ってしまい、<br />
+                <span class="line2"
+                  >そのままモチベーションが下がってしまう</span
+                >
+              </span>
+            </p>
+            <p class="pro-wrap__txt">
+              <span class="linebox">
+                どれだけ進んだのか、成長できているのかが分からず、<br />
+                <span class="line2">不安になって続けられない</span>
+              </span>
+            </p>
+
+            <p class="pro-emphasis">
+              <strong
+                >そんなあなたを、<br />かわいい仲間と一緒にサポートします。</strong
+              >
+            </p>
+            <img src="img/pro-img1.jpg" alt="犬" class="dog" />
+          </div>
+        </div>
+      </section>
+
+      <section class="fea" id="fea">
+        <div class="container">
+          <h2 class="fea__title __ttl1">
+            <img src="/img/fea-ttl-img.jpg" alt="肉級" class="ttl-img" />
+            学びを支える3つのポイント
+            <img src="/img/fea-ttl-img.jpg" alt="肉球" class="ttl-img" />
+          </h2>
+          <p class="fea__lead __sttl">
+            あなたの学習をもっと楽しく、もっと効率的に。
+          </p>
+
+          <article class="fea-card">
+            <span class="fea-card__badge">Point 1</span>
+            <div class="fea-card__body">
+              <div class="fea-card__media">
+                <img src="img/fea-img1.png" alt="トラとウサギの学習イラスト" />
+              </div>
+              <div class="fea-card__copy">
+                <h3>毎日の学習を、<br />もっとワクワクする時間に</h3>
+                <p>
+                  かわいい動物たちが、あなたの学習をやさしくサポート。<br />日々の学習時間を記録するだけで、成長の軌跡がひと目で<br />わかります。
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="fea-card fea-card fea-card--green fea-card--reverse">
+            <span class="fea-card__badge">Point 2</span>
+            <div class="fea-card__body">
+              <div class="fea-card__media">
+                <img
+                  src="img/fea-img2.png"
+                  alt="カレンダーと成長グラフのイラスト"
+                />
+              </div>
+              <div class="fea-card__copy">
+                <h3>がんばりが、<br />目に見えるから続けられる</h3>
+                <p>
+                  カレンダーやグラフで、勉強の進捗を一目でチェック。<br />自分のペースをつかみながら、少しずつスキルを伸ばし<br />ていけます。
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="fea-card">
+            <span class="fea-card__badge">Point 3</span>
+            <div class="fea-card__body">
+              <div class="fea-card__media">
+                <img src="img/fae-img3.png" alt="仲間に応援されるイラスト" />
+              </div>
+              <div class="fea-card__copy">
+                <h3>続ける力を、<br />かわいい仲間が応援</h3>
+                <p>
+                  毎日の学習記録が、動物たちの世界を育てていきます。<br />少しずつ増える変化が、学習習慣を自然と作ります。
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sup" id="sup">
+        <div class="sup__inner">
+          <h2 class="sup__ttl __ttl1">続ける力を、<br />かわいい仲間が応援</h2>
+          <p class="sup__lead __sttl">
+            あなたのがんばりを、動物たちがそっと支えます。<br />
+            毎日の学びが、もっと楽しい習慣に変わります。
+          </p>
+          <a href="#" class="__btn sup__btn">無料トライアル</a>
+        </div>
+        <img
+          src="img/sup-bg.png"
+          alt="応援してくれる仲間たちのイラスト"
+          class="sup__illust"
+        />
+      </section>
+
+      <section class="how" id="how">
+        <div class="how__inner">
+          <h2 class="how__ttl __ttl1">使い方</h2>
+          <p class="how__lead __sttl">
+            はじめてでも安心。4ステップでスタートできます。
+          </p>
+
+          <ol class="how__steps">
+            <li class="how__step">
+              <img
+                class="how__badge"
+                src="img/how-img-1-1.png"
+                alt="ステップ1"
+              />
+              <p class="how__step-ttl">アカウント作成</p>
+              <img
+                class="how__illu"
+                src="img/how-img1-2.jpg"
+                alt="メール登録のイラスト"
+              />
+              <p class="how__desc">メールアドレスを<br />登録</p>
+            </li>
+
+            <li class="how__step">
+              <img
+                class="how__badge"
+                src="img/how-img2-1.png"
+                alt="ステップ2"
+              />
+              <p class="how__step-ttl">動物キャラを選択</p>
+              <img
+                class="how__illu"
+                src="img/how-img2-2.png"
+                alt="仲間を決めるイラスト"
+              />
+              <p class="how__desc">学習を応援する<br />仲間を決める</p>
+            </li>
+
+            <li class="how__step">
+              <img
+                class="how__badge"
+                src="img/how-img-3-1.png"
+                alt="ステップ3"
+              />
+              <p class="how__step-ttl">スケジュールを設定</p>
+              <img
+                class="how__illu"
+                src="img/how-img3-2.jpg"
+                alt="カレンダー設定のイラスト"
+              />
+              <p class="how__desc">目標や学習時間を<br />設定</p>
+            </li>
+
+            <li class="how__step">
+              <img
+                class="how__badge"
+                src="img/how-img4-1.png"
+                alt="ステップ4"
+              />
+              <p class="how__step-ttl">学習スタート！</p>
+              <img
+                class="how__illu"
+                src="img/how-img-4-2.jpg"
+                alt="楽しく学習のイラスト"
+              />
+              <p class="how__desc">かわいい仲間と<br />楽しく学習</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="pri" id="price">
+        <div class="pri__inner">
+          <h2 class="pri__ttl __ttl1">料金プラン</h2>
+          <p class="pri__lead __sttl">
+            シンプルで分かりやすい、1つのプランだけ。
+          </p>
+
+          <article class="pri-card" aria-labelledby="pri-price">
+            <span class="pri-card__badge">
+              <span>30日間<br />無料で<br />お試し</span>
+            </span>
+
+            <p class="pri-card__row">
+              <span class="pri-card__unit">月額</span>
+              <span id="pri-price" class="pri-card__price">500</span>
+              <span class="pri-card__yen">円</span>
+            </p>
+
+            <p class="pri-card__note">
+              すべての機能を制限なくご利用いただけます
+            </p>
+          </article>
+
+          <a href="#" class="__btn pri__btn">無料トライアル</a>
+        </div>
+      </section>
+
+      <section class="sns" id="sns">
+        <div class="sns__frame">
+          <div class="sns__grid container">
+            <h2 class="sns__title __ttl1">最新情報をチェック</h2>
+            <div class="sns__left">
+              <p class="sns__lead __sttl">
+                学習をもっと楽しく続けるためのヒントや最新ニュースをお届け
+                します。
+              </p>
+
+              <ul class="sns__icons">
+                <li>
+                  <a
+                    class="fa-brands fa-x-twitter"
+                    href="https://twitter.com/XcorpJP"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="X（旧Twitter）"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="fa-brands fa-instagram"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="fa-brands fa-facebook"
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                  ></a>
+                </li>
+              </ul>
+
+              <a href="#" class="sns__btn __btn">お問い合わせ</a>
+            </div>
+
+            <div class="sns__right">
+              <div class="x-embed">
+                <!-- ダミー -->
+                <div class="x-skel">
+                  <div class="x-skel__thumb"></div>
+                  <div class="x-skel__line"></div>
+                  <div class="x-skel__line"></div>
+                  <div class="x-skel__line x-skel__line--short"></div>
+                </div>
+
+                <!-- X タイムライン -->
+                <a
+                  class="twitter-timeline"
+                  data-width="480"
+                  data-height="500"
+                  data-dnt="true"
+                  href="https://twitter.com/XcorpJP"
+                >
+                  Posts by @XcorpJP
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer-wrap">
+        <p>© 2025 M.SHIMIZU All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </body>
+</html>
